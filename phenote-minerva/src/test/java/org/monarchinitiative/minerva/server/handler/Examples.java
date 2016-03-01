@@ -1,7 +1,7 @@
-package owltools.gaf.lego.server.handler;
+package org.monarchinitiative.minerva.server.handler;
 
 import static org.junit.Assert.*;
-import static owltools.gaf.lego.MolecularModelJsonRenderer.*;
+import static org.geneontology.minerva.json.MolecularModelJsonRenderer.*;
 
 import java.util.Collections;
 import java.util.List;
@@ -14,19 +14,19 @@ import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
 import org.semanticweb.owlapi.model.OWLObjectProperty;
 
-import owltools.gaf.lego.MolecularModelJsonRenderer.KEY;
-import owltools.gaf.lego.UndoAwareMolecularModelManager;
-import owltools.gaf.lego.server.handler.M3BatchHandler.Entity;
-import owltools.gaf.lego.server.handler.M3BatchHandler.M3Argument;
-import owltools.gaf.lego.server.handler.M3BatchHandler.M3BatchResponse;
-import owltools.gaf.lego.server.handler.M3BatchHandler.M3Request;
-import owltools.gaf.lego.server.handler.M3BatchHandler.Operation;
+import org.geneontology.minerva.json.MolecularModelJsonRenderer.KEY;
+import org.geneontology.minerva.UndoAwareMolecularModelManager;
+import org.geneontology.minerva.server.handler.M3BatchHandler.Entity;
+import org.geneontology.minerva.server.handler.M3BatchHandler.M3Argument;
+import org.geneontology.minerva.server.handler.M3BatchHandler.M3BatchResponse;
+import org.geneontology.minerva.server.handler.M3BatchHandler.M3Request;
+import org.geneontology.minerva.server.handler.M3BatchHandler.Operation;
 import owltools.graph.OWLGraphWrapper;
 import owltools.io.CatalogXmlIRIMapper;
 import owltools.io.ParserWrapper;
 
 public class Examples {
-	
+
 	private static OWLGraphWrapper graph = null;
 	private static UndoAwareMolecularModelManager models = null;
 	private static JsonOrJsonpBatchHandler handler = null;
@@ -43,7 +43,7 @@ public class Examples {
 		ParserWrapper pw = new ParserWrapper();
 		pw.addIRIMapper(new CatalogXmlIRIMapper("../examples/catalog-v001.xml"));
 		graph = pw.parseToOWLGraph("../examples/minerva-importer.owl");
-		
+
 		models = new UndoAwareMolecularModelManager(graph);
 		JsonOrJsonpBatchHandler.ADD_INFERENCES = true;
 		JsonOrJsonpBatchHandler.USE_CREATION_DATE = true;
@@ -71,7 +71,7 @@ public class Examples {
 	@Test
 	public void testExample1() {
 		final String modelId = generateBlankModel();
-		
+
 		// create two individuals
 		// individual for disease OMIM:100050
 		M3Request[] batch1 = new M3Request[1];
@@ -125,7 +125,7 @@ public class Examples {
 		assertEquals(resp3.message, M3BatchResponse.MESSAGE_TYPE_SUCCESS, resp3.message_type);
 	}
 
-	
+
 	/**
 	 * @return modelId
 	 */
