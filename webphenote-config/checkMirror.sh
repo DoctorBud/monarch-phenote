@@ -6,8 +6,8 @@ export CATALOG=./catalog.xml
 export OWLTOOLS_JAR="/opt/owltools/OWLTools-Runner/bin/owltools-runner-all.jar"
 export OWLTOOLS="java -Xms3000m -Xmx5500m -DentityExpansionLimit=4086000 -Djava.awt.headless=true -jar ${OWLTOOLS_JAR}"
 
-# export ROOT=http://purl.obolibrary.org/obo/upheno/monarch.owl
-export ROOT=http://purl.obolibrary.org/obo/so.owl
+export ROOT=http://purl.obolibrary.org/obo/upheno/monarch.owl
+# export ROOT=http://purl.obolibrary.org/obo/so.owl
 
 $OWLTOOLS \
 	--catalog-xml $CACHEDIR/$CATALOG \
