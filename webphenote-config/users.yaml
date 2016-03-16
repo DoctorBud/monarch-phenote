@@ -3,7 +3,7 @@
   email-md5:
     - 1da7b1538b4b21f1cfe7ce462965a549
   authorizations:
-    noctua-monarch:
+    noctua-go:
       allow-edit: true
   uri: 'http://orcid.org/0000-0002-1643-6242'
   organization: OHSU
@@ -13,7 +13,7 @@
   email-md5:
     - 2c3e08f58b80ed58f692a238af40d3d6
   authorizations:
-    noctua-monarch:
+    noctua-go:
       allow-edit: true
   uri: 'http://orcid.org/0000-0002-9353-5498'
   organization: OHSU
