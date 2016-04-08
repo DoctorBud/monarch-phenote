@@ -12,13 +12,13 @@ export OWLTOOLS="java -Xms5500m -Xmx20500m -DentityExpansionLimit=4086000 -Djava
 export CACHEDIR=`pwd`/cached-models
 export CATALOG=$CACHEDIR/catalog.xml
 
-#export SOLR_URL=http://solr-dev.monarchinitiative.org/solr/ontology/
-export SOLR_URL=http://localhost/solr/ontology/   # because we are running on GOLR server
+export SOLR_URL=http://solr-dev.monarchinitiative.org/solr/ontology/
+#export SOLR_URL=http://localhost/solr/ontology/   # because we are running on GOLR server
 
 export SOLR_CONFIG=ont-config.yaml
 
-export ONTOLOGY_ROOT=http://purl.obolibrary.org/obo/ro.owl
-# export ONTOLOGY_ROOT=http://purl.obolibrary.org/obo/upheno/monarch.owl
+# export ONTOLOGY_ROOT=http://purl.obolibrary.org/obo/ro.owl
+export ONTOLOGY_ROOT=http://purl.obolibrary.org/obo/upheno/monarch.owl
 
 # Purge anything in the core
 
