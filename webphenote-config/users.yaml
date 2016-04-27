@@ -1,4 +1,14 @@
 -
+  nickname: 'Erin Foster'
+  email-md5:
+    - 6c1b87e090990c775e3127eb15d0114f
+  authorizations:
+    noctua-go:
+      allow-edit: true
+  uri: 'http://orcid.org/0000-0001-6908-9849'
+  organization: OHSU
+  xref: 'OHSUMI:ef'
+-
   nickname: 'Dan Keith'
   email-md5:
     - 1da7b1538b4b21f1cfe7ce462965a549
