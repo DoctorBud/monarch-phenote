@@ -1,4 +1,14 @@
 -
+  nickname: 'Jim Balhoff'
+  email-md5:
+    - f28e1be9fc622bffbecb166378ef2456
+  authorizations:
+    noctua-go:
+      allow-edit: true
+  uri: 'http://orcid.org/0000-0002-8688-6599'
+  organization: OHSU
+  xref: 'NESCMI:jpb'
+-
   nickname: 'Erin Foster'
   email-md5:
     - 6c1b87e090990c775e3127eb15d0114f
