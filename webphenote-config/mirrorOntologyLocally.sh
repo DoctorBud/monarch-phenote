@@ -10,6 +10,9 @@ fi
 if [ "$ROOTOWL" == 'monarch' ]; then
 	ROOTOWL_URL='http://purl.obolibrary.org/obo/upheno/monarch.owl'
 fi
+if [ "$ROOTOWL" == 'go' ]; then
+	ROOTOWL_URL='http://purl.obolibrary.org/obo/go/extensions/go-lego.owl'
+fi
 if [ "$ROOTOWL" == 'ro' ]; then
 	ROOTOWL_URL='http://purl.obolibrary.org/obo/ro.owl'
 fi
